@@ -43,8 +43,8 @@ dtools.update_sly_url_dict({project_id: download_sly_url})
 # preset fields
 custom_data = {
     # required fields
-    "name": "LaboroTomato",
-    "fullname": "Laboro Tomato: Instance segmentation dataset",
+    "name": "Sweet Pepper",
+    "fullname": "Sweet Pepper and Peduncle Segmentation",
     "cv_tasks": [
         "semantic segmentation",
         "object detection",
@@ -52,20 +52,20 @@ custom_data = {
     ],
     "annotation_types": ["instance segmentation"],
     "industries": ["agriculture"],
-    "release_year": 2020,
-    "homepage_url": "https://github.com/laboroai/LaboroTomato#readme",
-    "license": "Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License",
-    "license_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "preview_image_id": 197754,
-    "github": "dataset-ninja/laboro-tomato",
-    "github_url": "https://github.com/dataset-ninja/laboro-tomato",
+    "release_year": 2022,
+    "homepage_url": "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download",
+    "license": "Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "preview_image_id": 220267,
+    "github": "dataset-ninja/sweet-pepper",
+    "github_url": "https://github.com/dataset-ninja/sweet-pepper",
     "download_sly_url": download_sly_url,
     # optional fields
-    "download_original_url": "https://github.com/laboroai/LaboroTomato#download-dataset",
+    "download_original_url": "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download",
     # "paper": "https://ieeexplore.ieee.org/document/8954630",
     # "citation_url": "https://github.com/laboroai/LaboroTomato#readme",
-    "organization_name": "Laboro.AI Inc.",
-    "organization_url": "https://laboro.ai/",
+    # "organization_name": "Laboro.AI Inc.",
+    # "organization_url": "https://laboro.ai/",
     # "tags": [],
 }
 api.project.update_custom_data(project_id, custom_data)
