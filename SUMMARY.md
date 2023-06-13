@@ -2,7 +2,7 @@
 
 The dataset consists of 620 images with 6422 labeled objects belonging to 1 single class (*pepper*).
 
-Each image in the Sweet Pepper dataset has pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. There is 1 unlabled image (i.e. without annotations). There is 1 split in the dataset: *ds* (620 images). The dataset was released in 2022.
+Each image in the Sweet Pepper dataset has pixel-level instance segmentation annotations. Due to the nature of the instance segmentation task, it can be automatically transformed into semantic segmentation (only one mask for every class) or object detection (bounding boxes for every object) tasks. There is 1 unlabled image (i.e. without annotations). There is 1 split in the dataset: *ds* (620 images). The dataset was released in 2021.
 
 Here is the visualized example grid with annotations:
 

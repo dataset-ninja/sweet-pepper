@@ -20,7 +20,7 @@ CV_TASKS: List[CVTask] = [
 ]
 ANNOTATION_TYPES: List[AnnotationType] = [AnnotationType.InstanceSegmentation()]
 
-RELEASE_YEAR: int = 2022
+RELEASE_YEAR: int = 2021
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download"
 # e.g. "https://some.com/dataset/homepage"
 
