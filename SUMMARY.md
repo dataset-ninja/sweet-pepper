@@ -1,4 +1,4 @@
-**Sweet Pepper** (Sweet pepper and peduncle segmentation) is a dataset for semantic segmentation, object detection, and instance segmentation tasks. It is used in the agriculture industry.
+**Sweet Pepper and Peduncle Segmentation** is a dataset for semantic segmentation, object detection, and instance segmentation tasks. It is used in the agriculture industry.
 
 The dataset consists of 620 images with 6422 labeled objects belonging to 1 single class (*pepper*).
 
