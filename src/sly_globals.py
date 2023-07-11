@@ -41,27 +41,36 @@ extract_folder_name = "dataset_620_red_yellow_cart_only"
 annotation_file_name = "620_images_via_project.json"
 images_ext = ".png"
 sample_percent = round(int(100) * 6.2)
-class_name = "pepper"
+class_names = (
+    "green fruit",
+    "green peduncle",
+    "red fruit",
+    "red peduncle",
+    "yellow fruit",
+    "yellow peduncle",
+    "orange fruit",
+    "orange peduncle",
+)
+
+obj_classes = [sly.ObjClass(class_name, sly.Polygon) for class_name in class_names]
+
+cls_to_obj_classes = {cls_name: obj_class for cls_name, obj_class in zip(class_names, obj_classes)}
+
+# color_tag_name = "color"
+# tag_meta_color = sly.TagMeta(color_tag_name, sly.TagValueType.ANY_STRING)
+# type_tag_name = "type"
+# tag_meta_type = sly.TagMeta(type_tag_name, sly.TagValueType.ANY_STRING)
+# tag_metas = [tag_meta_color, tag_meta_type]
 
 batch_size = 30
+# tag_meta_collection = sly.TagMetaCollection(tag_metas)
 
-obj_class = sly.ObjClass(class_name, sly.Polygon)
-obj_class_collection = sly.ObjClassCollection([obj_class])
-
-color_tag_name = "color"
-tag_meta_color = sly.TagMeta(color_tag_name, sly.TagValueType.ANY_STRING)
-type_tag_name = "type"
-tag_meta_type = sly.TagMeta(type_tag_name, sly.TagValueType.ANY_STRING)
-tag_metas = [tag_meta_color, tag_meta_type]
-
-tag_meta_collection = sly.TagMetaCollection(tag_metas)
-
-meta = sly.ProjectMeta(obj_classes=obj_class_collection, tag_metas=tag_meta_collection)
+meta = sly.ProjectMeta(obj_classes=obj_classes)
 
 # storage_dir = sly.app.get_data_dir()
 storage_dir = "./APP_DATA"
 work_dir_path = os.path.join(storage_dir, work_dir)
-sly.io.fs.mkdir(work_dir_path)
+# sly.io.fs.mkdir(work_dir_path)
 archive_path = os.path.join(work_dir_path, arch_name)
 image_name_to_polygon = {}
 image_name_to_attribute = {}

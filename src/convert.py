@@ -44,10 +44,9 @@ def create_ann(img_path):
 
         polygon = sly.Polygon(points, interior=[])
 
-        tag_color = sly.Tag(g.tag_meta_color, value=attributes[index]["Color"])
-        tag_type = sly.Tag(g.tag_meta_type, value=attributes[index]["Type"])
+        cls_name = attributes[index]["Color"] + " " + attributes[index]["Type"]
 
-        label = sly.Label(polygon, g.obj_class, tags=sly.TagCollection([tag_color, tag_type]))
+        label = sly.Label(polygon, g.cls_to_obj_classes[cls_name])
         labels.append(label)
 
     return sly.Annotation(img_size=(height, width), labels=labels)

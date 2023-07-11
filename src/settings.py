@@ -12,7 +12,7 @@ PROJECT_NAME_FULL: str = "Sweet Pepper and Peduncle Segmentation"
 # * After uploading to instance ##
 ##################################
 LICENSE: License = License.CC_BY_SA_4_0()
-INDUSTRIES: List[Industry] = [Industry.Agriculture()]
+APPLICATIONS: List[Industry] = [Industry.Agriculture(is_used=False)]
 CV_TASKS: List[CVTask] = [
     CVTask.SemanticSegmentation(),
     CVTask.ObjectDetection(),
@@ -24,7 +24,7 @@ RELEASE_YEAR: int = 2021
 HOMEPAGE_URL: str = "https://www.kaggle.com/datasets/lemontyc/sweet-pepper?resource=download"
 # e.g. "https://some.com/dataset/homepage"
 
-PREVIEW_IMAGE_ID: int = 220267
+PREVIEW_IMAGE_ID: int = 1634026
 # This should be filled AFTER uploading images to instance, just ID of any image.
 
 GITHUB_URL: str = "https://github.com/dataset-ninja/sweet-pepper"
@@ -38,7 +38,16 @@ DOWNLOAD_ORIGINAL_URL: Optional[
 ] = "https://www.kaggle.com/datasets/lemontyc/sweet-pepper/download?datasetVersionNumber=1"
 # Optional link for downloading original dataset (e.g. "https://some.com/dataset/download")
 
-CLASS2COLOR: Optional[Dict[str, List[str]]] = {"pepper": [208, 2, 27]}
+CLASS2COLOR: Optional[Dict[str, List[str]]] = {
+    "green fruit": [60, 180, 75],
+    "green peduncle": [0, 0, 128],
+    "red fruit": [230, 25, 75],
+    "red peduncle": [128, 0, 0],
+    "yellow fruit": [255, 225, 25],
+    "yellow peduncle": [128, 128, 0],
+    "orange fruit": [245, 130, 48],
+    "orange peduncle": [170, 110, 40],
+}
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
 PAPER: Optional[str] = None
@@ -63,7 +72,7 @@ def get_settings():
         "project_name": PROJECT_NAME,
         "project_name_full": PROJECT_NAME_FULL,
         "license": LICENSE,
-        "industries": INDUSTRIES,
+        "applications": APPLICATIONS,
         "cv_tasks": CV_TASKS,
         "annotation_types": ANNOTATION_TYPES,
         "release_year": RELEASE_YEAR,
