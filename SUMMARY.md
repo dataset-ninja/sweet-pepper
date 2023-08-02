@@ -1,4 +1,4 @@
-**Sweet Pepper and Peduncle Segmentation** is a dataset for semantic segmentation, object detection, and instance segmentation tasks. Possible applications of the dataset could be in the agricultural industry. 
+**Sweet Pepper and Peduncle Segmentation** is a dataset for instance segmentation, semantic segmentation, and object detection tasks. Possible applications of the dataset could be in the agricultural industry. 
 
 The dataset consists of 620 images with 6422 labeled objects belonging to 8 different classes including *green fruit*, *red fruit*, *green peduncle*, and other: *yellow fruit*, *red peduncle*, *yellow peduncle*, *orange fruit*, and *orange peduncle*.
 
@@ -6,4 +6,4 @@ Images in the Sweet Pepper dataset have pixel-level instance segmentation annota
 
 Here is the visualized example grid with annotations:
 
-[horizontal_grid](https://github.com/dataset-ninja/sweet-pepper/raw/main/visualizations/horizontal_grid.webm)
+<img src="https://github.com/dataset-ninja/sweet-pepper/raw/main/visualizations/horizontal_grid.png">
