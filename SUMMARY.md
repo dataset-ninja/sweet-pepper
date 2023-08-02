@@ -6,4 +6,4 @@ Images in the Sweet Pepper dataset have pixel-level instance segmentation annota
 
 Here is the visualized example grid with annotations:
 
-<img src="https://github.com/dataset-ninja/sweet-pepper/raw/main/visualizations/horizontal_grid.png">
+[horizontal_grid](https://github.com/dataset-ninja/sweet-pepper/raw/main/visualizations/horizontal_grid.webm)
