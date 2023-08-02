@@ -60,7 +60,7 @@ CLASS2COLOR: Optional[Dict[str, List[str]]] = {
     "yellow fruit": [255, 225, 25],
     "yellow peduncle": [0, 139, 139],
     "orange fruit": [0, 255, 0],
-    "orange peduncle": [170, 110, 128, 0],
+    "orange peduncle": [170, 110, 128],
 }
 # If specific colors for classes are needed, fill this dict (e.g. {"class1": [255, 0, 0], "class2": [0, 255, 0]})
 
