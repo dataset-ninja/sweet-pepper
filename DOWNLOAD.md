@@ -1,6 +1,6 @@
 Dataset **Sweet Pepper** can be downloaded in [Supervisely format](https://developer.supervisely.com/api-references/supervisely-annotation-json-format):
 
- [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/N/U/M3/QYe3CvXafou9RYTq4UYqJivZoEtqwEC0wRM35GToF4We7hOIT4Y4n4hKajsyCEEqf6fjtsxZ23VD7gjRoyPycu1nyR1i4Ovxk66flhRb7r44irq2NSK9ZE0t6tQ3.tar)
+ [Download](https://assets.supervisely.com/supervisely-supervisely-assets-public/teams_storage/M/t/i9/ePsA7JzL5DqWUQaQuBIWS5hb057Nh1AC7ty4riQytLAG8iHattEqmXDCtjbcK7OKglA0BWdqAIZD2I16xmN2crOsgm6n8PZcuoOcqGMQJB0t7jhixJxRXNHR9Tmb.tar)
 
 As an alternative, it can be downloaded with *dataset-tools* package:
 ``` bash
