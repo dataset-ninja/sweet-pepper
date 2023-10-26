@@ -1,6 +1,4 @@
-This dataset was created as part of master's research project (also public and available [here](https://github.com/lemontyc/rgbd-pepper-pose-estimation)). It consisted of using an RGB-D based sensor to detect peppers and their peduncles and then using depth information to estimate their peduncle's pose.
-
-The data gathered here was obtained by moving the sensor horizontally facing sweet pepper crops in a greenhouse. The sensor had a distance of 0.6 meters to the crops. It used default settings and a resolution of 1280x720 pixels.
+This dataset was created as part of a master's research project. It consisted of using an RGB-D based sensor to detect peppers and their peduncles and then using depth information to estimate their peduncle's pose. The data gathered here was obtained by moving the sensor horizontally facing sweet pepper crops in a greenhouse. The sensor had a distance of 0.6 meters from the crops. It used default settings and a resolution of 1280x720 pixels.
 
 | Characteristic       | Value                         |
 | -------------------- | ----------------------------- |
